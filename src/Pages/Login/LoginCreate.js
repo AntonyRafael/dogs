@@ -2,9 +2,9 @@ import React from 'react'
 
 const LoginCreate = () => {
     return (
-        <div>
+        <section className="animeLeft">
             criar
-        </div>
+        </section>
     )
 }
 
