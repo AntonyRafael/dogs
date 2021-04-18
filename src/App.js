@@ -18,6 +18,7 @@ function App() {
       <BrowserRouter>
         <UserStorage>
           <Header />
+          <main className="AppBody">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="login/*" element={<Login />} />
@@ -26,6 +27,7 @@ function App() {
             <Route path="perfil/:user" element={<UserProfile />} />
             <Route path="*" element={<Page404 />} />
           </Routes>
+          </main>
           <Footer />
         </UserStorage>
       </BrowserRouter>
