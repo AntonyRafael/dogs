@@ -6,6 +6,7 @@ import UserPhotoPost from './UserPhotoPost'
 import UserStats from './UserStats'
 import { UserContext } from '../../UserContext'
 import Page404 from '../NotFound/Page404'
+import Head from '../../Components/Helper/Head'
 
 const User = () => {
 
@@ -13,6 +14,8 @@ const User = () => {
 
     return (
         <section className="container">
+            <Head title="Minha Conta " description="Conta do usuario do site dogs"/>
+
             <UserHeader />
             <Routes>
                 <Route path="/" element={<Feed user={data.id} />} />
