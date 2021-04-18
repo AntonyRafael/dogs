@@ -95,6 +95,11 @@ a {
   animation: animeLeft 0.3s forwards;
 }
 
+
+.VictoryContainer {
+  height: initial !important;
+}
+
 @keyframes animeLeft {
   to {
     opacity: 1;
