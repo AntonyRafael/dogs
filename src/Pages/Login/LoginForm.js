@@ -37,7 +37,7 @@ const LoginForm = () => {
         ) : (
           <Button>Entrar</Button>
         )}
-        <Error error={error} />
+        <Error error={error && "Usuário ou senha incorretos"} />
       </form>
 
       <Link className={styles.perdeu} to="/login/perdeu">

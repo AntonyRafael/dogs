@@ -23,12 +23,15 @@ const LoginPasswordLost = () => {
   }
 
   return (
-    <section>
-            <Head title="Perdeu a senha ? " description="Perdeu a senha do site dogs"/>
+    <section className="animeLeft">
+      <Head
+        title="Perdeu a senha ? "
+        description="Perdeu a senha do site dogs"
+      />
 
       <h1 className="title">Perdeu sua senha:</h1>
       {data ? (
-        <p style={{color: '#4c1',}}>{data}</p>
+        <p style={{ color: "#4c1" }}>{data}</p>
       ) : (
         <form onSubmit={handleSubmit}>
           <Input
